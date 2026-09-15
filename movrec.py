@@ -62,7 +62,6 @@ def Table(df):
 
     return st.plotly_chart(fig, use_container_width=True)
 
-
 if st.button('Show recommendation'):
     recommended_movie_names = get_recommendations(selected_movie)
     Table(recommended_movie_names)
